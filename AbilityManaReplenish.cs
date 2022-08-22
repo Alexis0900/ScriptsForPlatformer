@@ -1,0 +1,18 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class AbilityManaReplenish : AbilityController
+{
+    public GameObject player;
+
+    void Start()
+    {
+    }
+
+    public override void Ability()
+    {
+        player.GetComponent<PlayerCombatController>().GainMana(500);
+    }
+
+}
